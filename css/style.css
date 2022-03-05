@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+/* Common Heading CSS */
+.section_heading {
+  text-align: center;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.section_heading h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/* Main CSS */
+.portfolio_area {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio_slider {
+  background-color: #012241;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10%;
+}
+
+.btn {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.active {
+  width: 45px;
+}
+
+.slider_items {
+  display: flex;
+  width: 3200px;
+  transition: all 0.5s linear;
+}
+
+.slider_item {
+ height: 400px;
+ width: 800px;
+ position: relative;
+ margin: 4px;
+}
+
+.portfolio_content {
+  background-color: rgb(110, 100, 247);
+  height: 270px;
+  width: 520px;
+  color: #fff;
+  left: 0;
+  top: 20%;
+  border-radius: 10px;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+}
+
+.portfolio_content h3 {
+  font-size: 1rem;
+}
+
+.portfolio_content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio_img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+}
+
+.portfolio_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
